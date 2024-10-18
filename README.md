@@ -20,3 +20,6 @@ This project enhances JMeter's capabilities to capture and analyze custom perfor
 # JSR223 Listeners
 Use Groovy scripts to capture and send custom metrics with associated tags.
 Capture data like response times, track threads groups users, and send it to InfluxDB for further analysis.
+
+# Contributing ❤️
+>> We encourage contributions to enhance this collection of test plan prototypes. Feel free to submit your own prototypes, report issues, or suggest improvements.
