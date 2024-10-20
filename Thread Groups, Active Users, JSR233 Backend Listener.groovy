@@ -3,8 +3,6 @@ import java.net.HttpURLConnection
 import java.net.URL
 import org.apache.jmeter.samplers.SampleResult
 
-// You can use this code to testplan level to collect thread groups active users
-
 // Configuration: InfluxDB details
 def influxHost = "http://localhost:8086" // Replace with your InfluxDB host and port
 def influxDBName = "jmeter"               // Replace with your database name
@@ -23,7 +21,7 @@ String influxData = "jmeter_metrics,application=jmeter,thread_group=${threadGrou
 // Send the data to InfluxDB
 try {
     // Construct the URL with the appropriate parameters
-    URL url = new URL("${influxHost}/api/v2/write?org=loa&bucket=${influxDBName}")
+    URL url = new URL("${influxHost}/api/v2/write?org=afrack&bucket=${influxDBName}")
     HttpURLConnection conn = (HttpURLConnection) url.openConnection()
     conn.setRequestMethod("POST")
     conn.setDoOutput(true)
